@@ -76,6 +76,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check Quality Gate
+
         uses: sonarsource/sonarqube-quality-gate-action@master
         timeout-minutes: 5
         env:

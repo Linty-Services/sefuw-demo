@@ -1,0 +1,2 @@
+read -vhdl ./sleep.vhd
+hierarchy -top sleep

@@ -9,7 +9,7 @@ jobs:
     timeout-minutes: 10
     runs-on: ubuntu-latest
     env:
-      LINTY_YOSYS_PLUGIN_VERSION: 0.15.0
+      LINTY_YOSYS_PLUGIN_VERSION: 1.0.0
 
     steps:
       - name: Git Checkout
@@ -69,7 +69,7 @@ jobs:
             -Dsonar.projectKey=sefuw-demo \
             -Dsonar.projectName="SEFUW Demo" \
             -Dsonar.sources=. \
-            -Dsonar.vhdl.topLevelEntity=sleep \
+            -Dsonar.vhdl.topLevelEntity=Dream \
             ${{ steps.LintyAnalysisParameters.outputs.value }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

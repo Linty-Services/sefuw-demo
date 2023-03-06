@@ -1,2 +1,2 @@
 read -vhdl ./sleep.vhd
-hierarchy -top sleep
+hierarchy -top Dream

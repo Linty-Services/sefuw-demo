@@ -77,7 +77,7 @@ jobs:
             -Dsonar.projectKey=sefuw-demo \
             -Dsonar.projectName="SEFUW Demo" \
             -Dsonar.sources=. \
-            -Dsonar.vhdl.topLevelEntity=sleep \
+            -Dsonar.vhdl.topLevelEntity=Dream \
             ${{ steps.LintyAnalysisParameters.outputs.value }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

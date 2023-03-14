@@ -19,7 +19,7 @@ jobs:
 
       - name: Set Linty Analysis Parameters
         uses: haya14busa/action-cond@v1.1.1
-        id: LintyAnalysisParameters
+        id: linty_analysis_parameters
         with:
           cond: ${{ github.event.pull_request.number != '' }}
           if_true: -Dsonar.pullrequest.key=${{ github.event.pull_request.number }} -Dsonar.pullrequest.base=${{ github.base_ref }} -Dsonar.pullrequest.branch=${{ github.head_ref }}

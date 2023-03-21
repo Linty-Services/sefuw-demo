@@ -22,7 +22,6 @@ jobs:
           key: sonar
           restore-keys: sonar
 
-
       - name: Set Linty Analysis Parameters
         uses: haya14busa/action-cond@v1.1.1
         id: linty_analysis_parameters

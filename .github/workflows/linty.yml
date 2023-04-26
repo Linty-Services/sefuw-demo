@@ -41,7 +41,7 @@ jobs:
             -e GITHUB_REPOSITORY="$GITHUB_REPOSITORY" \
             -e TABBY_CAD_LICENSE="$TABBY_CAD_LICENSE" \
             -v "$PWD:/usr/src" \
-            lintyservices/linty-scanner:latest
+            lintyservices/linty-scanner:cloud
         env:
           TABBY_CAD_LICENSE: ${{ secrets.TABBY_CAD_LICENSE }}
 

@@ -9,7 +9,7 @@ entity Dream is
     i2 : in std_logic;
     o1 : out std_logic;
     o2 : out std_logic;
-    blabla : out std logic vector (0 to 3)
+    blabla : out std_logic_vector (0 to 3)
 
   );
 end entity;

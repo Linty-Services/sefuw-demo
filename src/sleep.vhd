@@ -9,7 +9,7 @@ entity Dream is
     i2 : in std_logic;
     o1 : out std_logic;
     o2 : out std_logic;
-    o3 : out std_logic_vector(0 to 3)
+    blabla : out std logic vector (0 to 3)
 
   );
 end entity;
@@ -34,10 +34,10 @@ begin
         o2 <= '0';
       else
         o2 <= i1 or i2;
-        o3(0) <= '1';
-        o3(1) <= i1 or i2;
+        blabla(0) <= '1';
+        blabla(2) <= i1 or i2;
       end if;
     end if;
   end process;
-  o3(3) <= i1 or i2;
+  blabla(3) <= i1 or i2;
 end architecture;

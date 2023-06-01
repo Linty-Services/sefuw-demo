@@ -13,7 +13,7 @@ entity Dream is
   );
 end entity;
 
-architecture rtl of Deam is
+architecture rtl of Dream is
 begin
   p1 : process (clk) is
   begin
@@ -34,7 +34,7 @@ begin
       else
         o2 <= i1 or i2;
         blabla(0) <= '1';
-        blabla(2) <= i2;
+        blabla(2) <= i2 or i1;
       end if;
     end if;
   end process;

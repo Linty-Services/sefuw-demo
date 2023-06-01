@@ -8,8 +8,8 @@ entity Dream is
     i1 : in std_logic;
     i2 : in std_logic;
     o1 : out std_logic;
-    o2 : out std_logic:
-    blabla ; out std_logic_vector(0 to 3)
+    o2 : out std_logic;
+    blabla : out std_logic_vector(0 to 3)
   );
 end entity;
 

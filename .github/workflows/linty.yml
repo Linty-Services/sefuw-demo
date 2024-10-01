@@ -11,19 +11,19 @@ jobs:
 
     steps:
       - name: Git Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Cache
-        uses: actions/cache@v3.3.0
+        uses: actions/cache@v4.0.2
         with:
           path: ~/.sonar/cache
           key: sonar
           restore-keys: sonar
 
       - name: Set Linty Analysis Parameters
-        uses: haya14busa/action-cond@v1.1.1
+        uses: haya14busa/action-cond@v1.2.1
         id: linty_analysis_parameters
         with:
           cond: ${{ github.event.pull_request.number != '' }}
@@ -47,7 +47,7 @@ jobs:
 
       - name: Debug
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: debug
           path: .linty/

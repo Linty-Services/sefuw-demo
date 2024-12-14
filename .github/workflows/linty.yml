@@ -33,6 +33,7 @@ jobs:
       - name: Run Linty
         run: |
           docker run \
+            --user="$(id -u):$(id -g)" \
             -e SONAR_HOST_URL=https://cloud.linty-services.com \
             -e SONAR_TOKEN="${{ secrets.SCANNER_LINTY_SERVICES_CLOUD_TOKEN }}" \
             -e SONAR_SCANNER_OPTS="-Dsonar.qualitygate.wait=true ${{ steps.linty_analysis_parameters.outputs.value }}" \
